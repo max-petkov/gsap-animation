@@ -1,0 +1,80 @@
+/* Variables */
+:root {
+  --color-primary: #bb86fc;
+  --color-primary-variant: #3700b3;
+  --color-secondary: #03dac6;
+  --color-dark: #202124;
+  --color-dark-grey: #303134;
+  --color-green: #a1e34f;
+  --color-grey: #bdbfc0;
+}
+
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  background-color: var(--color-dark);
+}
+
+/* Logo Animation */
+.logo-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.question-container {
+  position: absolute;
+  top: 109px;
+  right: -100%;
+}
+
+.arrow-container {
+  position: absolute;
+  top: 76px;
+  left: 297px;
+}
+
+.question {
+  color: #fff;
+  font-size: 40px;
+}
+
+.answer-container {
+  margin-top: 32px;
+  display: flex;
+  gap: 32px;
+  overflow: hidden;
+}
+
+.btn {
+  padding: 10px 16px;
+  font-family: inherit;
+  font-size: 14px;
+  border-radius: 4px;
+  outline: none;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transform: translate(0, -100%);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+}
