@@ -7,6 +7,8 @@
   --color-dark-grey: #303134;
   --color-green: #a1e34f;
   --color-grey: #bdbfc0;
+  --color-danger: #cf6679;
+  --color-text-dark: #1c0e10;
 }
 
 /* General */
@@ -18,17 +20,24 @@
 
 body {
   font-family: sans-serif;
-  overflow-x: hidden;
 }
 
 .container {
   position: relative;
   height: 100vh;
   background-color: var(--color-dark);
+  overflow: hidden;
 }
 
 /* Logo Animation */
 .logo-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.new-logo-container {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -77,4 +86,31 @@ body {
 
 .btn-primary {
   background-color: var(--color-primary);
+  color: var(--color-text-dark);
+}
+
+.error-list {
+  list-style-type: none;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.error-list__container {
+  overflow: hidden;
+  transition: 1s;
+}
+
+.error-list__item {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: var(--color-danger);
+  color: var(--color-text-dark);
+  padding: 24px;
+  font-weight: 600;
+  max-width: 256px;
+  border-radius: 4px;
+  transform: translate(0, -100%);
+  transition: 1s;
 }
